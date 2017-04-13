@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html class='fullscreen'>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+<title>localStorage Editor</title>
+<style>
+#keyValueTable {
+    border: 1px black solid;
+    border-collapse: collapse;
+}
+#keyValueTable tr td, #keyValueTable tr th {
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+}
+</style>
+</head>
+<body>
+  <p>localStorage editor</p>
+  <form action='#'>
+  <table id='keyValueTable'>
+    <tr>
+      <th>Key</th>
+      <th>Value</th>
+    </tr>
+  </table>
+  </form>
+  <button onclick='storageAdd()' id='addButton'>Add</button>
+  <script>var theStorage = localStorage;</script>
+  <script src='js/storageEdit.js'></script>
+</body>
+</head>
