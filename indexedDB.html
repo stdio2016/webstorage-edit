@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html class='fullscreen'>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+<title>indexedDB Editor</title>
+</head>
+<body>
+<div id='chooseDBPage'>
+  <form action="javascript:tryOpenDB()" id='formDBName'>
+    <p>Type the name of the database:</p>
+    <input name='dbName' type="text"><button>OK</button>
+  </form>
+  <div id='chooseExisting' style='display:none;'>
+    <p>Or choose one of the following:</p>
+    <ul>
+    </ul>
+  </div>
+</div>
+<script src='js/idbOpen.js'></script>
+
+</body>
+</html>
